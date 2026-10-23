@@ -13,7 +13,7 @@ G6 Handoff — screen IDs, behavior/state coverage, implementation notes, open a
 Each gate: PASS with evidence / FAIL with defect+node ID / NOT TESTED with honest reason. Any fail on requested in-scope core output means not done. Figma API success + packaging validator PASS means only technical operation completion.
 
 ## Anti-regression task suite
-A. Clean-sheet SaaS: 3-role task, table bulk action, filtering, error/empty/loading, dark optional.
+A. Greenfield application: multiple roles, collection actions, filtering, error/empty/loading states; optional dark mode.
 B. Existing app change: change one control; prove no unrelated source layers changed.
 C. Component library: button/field/select with states, props, real instances, typed semantic variables.
 D. Brand kit: source assets only; explicit override wins stale existing token; logo source fidelity.
