@@ -1,9 +1,9 @@
 ---
 name: figma-product-design
 description: Design, build, evolve, and validate native Figma product UI, brand kits and scalable design systems, from zero or existing files. Select the smallest fitting workflow: discovery, UX architecture, visual direction, tokens/components, screens, changes, brand assets, or QA.
-version: 2.2.0
+version: 2.3.0
 ---
-# Figma Product Design v2.2 — workflow orchestrator
+# Figma Product Design v2.3 — workflow orchestrator
 
 ## Goal and precedence
 Deliver high-quality, genuinely editable Figma artifacts, not persuasive prose, placeholder screenshots, or surface-level AI decoration. Respect user instructions, established design, and directly observed file/code evidence above generic advice. This skill **does not replace** `human-first-design`, `human-first-web-audit`, or official Figma capabilities. Invoke official `figma-use` before any Figma API write; `figma-generate-design` for composed screens, `figma-generate-library` for tokens/components, and `figma-create-new-file` when creating a file. If these skills/tools are unavailable, explicitly report limitations; never claim canvas modifications.
@@ -66,3 +66,11 @@ A complete deliverable must be visually credible, structurally native/editable, 
 - Before/after **each** modifying Figma tool call use `references/figma-canvas-preflight.md`; a successful write is insufficient evidence of a visually correct design.
 - Apply `references/qa-scorecard.md` to complex deliverables. A zero on an applicable dimension blocks declaring finished.
 - Review `references/evidence-register.md` to distinguish source-backed rules from original team process proposals.
+
+## Failure recovery and integration regression (v2.3)
+- Follow `references/recovery-protocol.md` whenever a Figma operation fails, times out or is blocked. An error is not evidence of rollback; inspect actual state before retry. Never try to evade a permissions or safety block.
+- Follow `references/token-and-variant-regression.md` when claiming a working design system or responsive component library.
+- Declaring a color variable is **not** equivalent to binding it. Report created variable counts separately from audited `boundVariables` references on target nodes.
+- Separate real COMPONENT_SET variants from named standalone components. Verify instance ancestry, overrides and coverage against the requested state matrix.
+- Distinguish desktop-only checks from a verified mobile implementation. Never say responsive QA passed without reviewing the target-width screenshot and bounds.
+- Every test or release report must state PASS, FAIL or NOT TESTED with exact evidence; structural package validation alone does not establish design quality.
