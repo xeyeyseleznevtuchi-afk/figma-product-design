@@ -1,0 +1,28 @@
+# Source audit — coverage and interpretation (23 October 2026)
+Each source listed here was inspected through its available public page or documentation. **Source excerpts are paraphrased, not copied.** The public NN/g collection is a portal, not one unified UX method. Full coverage of every linked NN/g article or proprietary materials is not claimed. Current third-party MCP APIs change: re-read tool skills at execution time.
+
+| Source (link) | Direct finding | Adopted rule | Limit |
+|---|---|---|---|
+| [OpenAI visual frontend article](https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4) | Design intent and visual specificity are important for non-generic output | visual-direction brief + screenshot comparisons | Mostly frontend coding, not native Figma workflow |
+| [OpenAI frontend prompt](https://developers.openai.com/api/docs/guides/frontend-prompt) | Different products need different density/visual decisions | Domain-specific direction; no one-size template | Guidance, not design-quality proof |
+| [OpenAI Academy design context](https://academy.openai.com/en/public/clubs/champions-ecqup/videos/design-context-and-iteration-with-codex-2026-07-09) | Repeated feedback and references can live in `design.md` | Decision register + reference provenance | Single talk/clip, not general scientific validation |
+| [OpenAI–Figma integration](https://openai.com/ru-RU/index/figma-partnership/) | Two-way design/code workflows | Keep Figma native/editable, preserve code mapping where present | Not a new design methodology |
+| [Anthropic harness](https://www.anthropic.com/engineering/harness-design-long-running-apps) | Planner/generator/evaluator, staged work and handoff artifacts | Separate plan, execution and critic; evidence checkpoints | Research describes coding agents, adapt to Figma thoughtfully |
+| [Anthropic frontend-design skill](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md) | Deliberate typography, composition, color, motion, distinctive aesthetics | Quality criteria + reject formulaic output | Avoid novelty for its own sake in an established system |
+| [Figma Write to canvas](https://developers.figma.com/docs/figma-mcp-server/write-to-canvas/) | Real native nodes, components, variables and Auto Layout | Native deliverable requirement | Beta/access/tool availability vary |
+| [Figma tools/prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) | Read/write tools and scopes | Read before write, tool-specific contract | Tool surface may change |
+| [Figma create skills](https://developers.figma.com/docs/figma-mcp-server/create-skills/) | Encode repeatable safe operations and library reuse | Reusable routing and validation gates | Skill is not substitute for judgement |
+| [Figma structure file](https://developers.figma.com/docs/figma-mcp-server/structure-figma-file/) | Components, variables, semantic names, Auto Layout, annotations | Structural compliance checks | Page targets code generation; still helps creation |
+| [Figma Skills help](https://help.figma.com/hc/en-us/articles/39166810751895-Figma-skills-for-MCP) | Supported skill-driven MCP processes | Defer tool mechanics to official skills | Version/entitlement-dependent |
+| [EightShapes documenting components](https://eightshapes.com/articles/documenting-components/) | Documentation must address different audiences and examples | Component purpose, when to use, variants, edge cases | Context-dependent system process |
+| [EightShapes contribution criteria](https://eightshapes.com/articles/i-made-this-does-it-go-in-the-system/) | Reuse, vision, cost, momentum, guidance, timing filter proposed patterns | Component admission review; avoid universal monsters | Heuristic not numerical automatic test |
+| [Brad Frost Atomic Design](https://atomicdesign.bradfrost.com/) | Hierarchical pattern thinking and consistency | Dependency thinking and composability | Not mandatory Figma page taxonomy |
+| [DTCG 2025.10](https://www.designtokens.org/tr/2025.10/) | Interoperable token concepts, types, aliases | Primitive→semantic→component-level aliases, preserve metadata | Community Group report; not W3C standard |
+| [NN/g articles index](https://www.nngroup.com/articles/) | Research and usability topic directory | Reference library, not a single prescriptive instruction | Must consult relevant individual articles |
+| [NN/g user journeys vs flows](https://www.nngroup.com/articles/user-journeys-vs-user-flows/) | Journey cross-channel/high-level vs flow task-step/detail | Choose correct map based on user goal | Not every task requires both |
+| [NN/g IA guide](https://www.nngroup.com/articles/ia-study-guide/) | IA principles, navigation, card sorting, tree tests | IA before screens where navigation is material | Guide aggregates further material |
+
+**Discrepancy notes:** Earlier links to Anthropic under `/research/harness-design-long-running-apps` may redirect/fail; use confirmed `/engineering/`. DTCG 2025.10 is a Community Group publication, **not** a W3C standard. Some previously claimed recommendations are design inferences; this table distinguishes them from source material. The link to EightShapes contribution criteria was discoverable through search when direct page fetch failed.
+
+## Provenance protocol
+Tag design decisions as `observed-in-file`, `explicit-user-rule`, `published-guidance`, `proposed`, `unverified`. Examples in third-party references are not Metamentor or client-specific brand facts. No article can prove a Figma screenshot is visually correct without inspecting the actual artifact.
