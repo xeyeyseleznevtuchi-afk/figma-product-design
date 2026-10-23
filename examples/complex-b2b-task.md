@@ -1,6 +1,6 @@
-# Example: mass selection in a B2B search picker
-Task: select multiple classification codes, apply to search, edit selection and handle empty results.
-Roles: standard editor and read-only (permission behavior confirmed from brief).
-Flow: entry from search → picker opened → search/type → select multiple → confirm → chips appear → remove/reopen → reset.
-States: default, search pending, results, no results, selected, disabled apply, validation error, success; account for chip overflow (up to three rows if project specifies).
-Build: inspect design-system picker, modal, search field, checkbox, tags, button, toast. Reuse exact instances. Arrange sequence left-to-right if team convention calls for it. Build only missing elements and document why. Screenshots compare type, spacing and actual final chip behavior.
+# Example: multi-selection in a generic record picker
+Task: select multiple items, apply the selection, modify it and handle empty results.
+Roles: editor and read-only participant where relevant to the brief.
+Flow: open selection → search → select multiple → confirm → selected items displayed → edit/remove → reset.
+States: default, pending, populated, empty, selected, disabled action, validation error, success; include overflow behavior when specified.
+Build: inspect picker, dialog, search field, checkbox, tag, button and feedback components in the active system. Use instances. Show transitions and document missing components. Validate long labels, localization and component states against screenshots.
