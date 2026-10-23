@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0",
+  "project": {
+    "id": "PROJECT-ID",
+    "kind": "generic",
+    "revision": "0.1",
+    "status": "proposed"
+  },
+  "artifacts": [
+    {
+      "id": "FLOW-001",
+      "kind": "FLOW",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [],
+      "figmaNodeId": null
+    },
+    {
+      "id": "SCREEN-001",
+      "kind": "SCREEN",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [
+        "FLOW-001",
+        "TEMPLATE-001",
+        "CONTENT-001"
+      ],
+      "figmaNodeId": null
+    },
+    {
+      "id": "COMPONENT-001",
+      "kind": "COMPONENT",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [
+        "TOKEN-001"
+      ],
+      "figmaNodeId": null
+    },
+    {
+      "id": "TOKEN-001",
+      "kind": "TOKEN",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [],
+      "figmaNodeId": null
+    },
+    {
+      "id": "TEMPLATE-001",
+      "kind": "TEMPLATE",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [
+        "COMPONENT-001"
+      ],
+      "figmaNodeId": null
+    },
+    {
+      "id": "CONTENT-001",
+      "kind": "CONTENT",
+      "revision": "0.1",
+      "status": "proposed",
+      "source": "source-or-assumption",
+      "dependsOn": [],
+      "figmaNodeId": null
+    }
+  ],
+  "fixtures": [],
+  "validation": {
+    "screenshots": [],
+    "notes": []
+  }
+}
