@@ -20,13 +20,13 @@ Brad Frost: **atoms → molecules → organisms → templates → pages** are co
 7. Organisms should be assembled out of smaller components; if a region is uniquely coupled to one screen, local composition may remain a frame until reuse justifies a published component.
 8. Use content-driven, realistic fixture values. Contrast and responsive test each context and long strings. Trace page defects to owning master/token instead of patching each instance.
 
-## Traceability example: tender workspace
-Task: review bids → wireflow: list → filters → bid details → approve/error recovery.
-Atoms: button, input, checkbox, badge, label.
-Molecules: labeled search, status filter, sortable table header.
-Organisms: filter toolbar, tenders table, details drawer.
-Template: tenders workspace desktop/mobile content regions and rules.
-Pages: populated list, empty results, loading, permission error, long vendor name.
+## Domain-neutral traceability example
+Task: locate and inspect a record → wireflow: collection → query and filters → record details → complete action or recover from failure.
+Atoms: button, input, checkbox, status indicator, label.
+Molecules: labeled search, filter selection, sortable column header.
+Organisms: filter toolbar, data collection, detail panel.
+Template: collection workspace with responsive content zones and rules.
+Pages: populated collection, empty search result, loading, permission error, long record title.
 Any published component needs a demonstrated screen or pattern consumer.
 
 ## Anti-patterns
