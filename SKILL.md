@@ -1,7 +1,7 @@
 ---
 name: figma-product-design
 description: Design, build, evolve, and validate native Figma product UI, brand kits and scalable design systems, from zero or existing files. Select the smallest fitting workflow: discovery, UX architecture, visual direction, tokens/components, screens, changes, brand assets, or QA.
-version: 2.7.0
+version: 2.8.0
 ---
 # Figma Product Design v2.7 — workflow orchestrator
 
@@ -117,3 +117,6 @@ Never claim completed Figma QA without inspecting actual screenshots.
 - Create `templates/section-contract.md` for significant page sections: required slots, composition, density, responsive behavior, approved components and selected reference IDs.
 - Only adopt relevant references; do not substitute generic galleries for task and brand evidence. Keep exploratory personal prototypes lightweight, while respecting applicable reuse restrictions.
 - A page screen assembled without inspected composition references or an explicit existing-system rationale must not be called visually validated.
+
+## Foundation-first / illustration-first release gate (v2.8)
+For broad redesign or greenfield work, follow `references/foundation-first-generation.md` as a hard blocker before any high-fidelity screen assembly. Prepare a real foundation kit, illustration/media decisions and specimens (`templates/illustration-contract.md`), atomic component masters and variants, and reusable responsive section masters. Execute `templates/foundation-kit-audit.md` with real Figma evidence and do not proceed to polished screens until all required areas PASS. Provisional wireframes must be explicitly labeled and not described as design-system-complete. Updates to a screen feed back into affected kit components and section contracts.
