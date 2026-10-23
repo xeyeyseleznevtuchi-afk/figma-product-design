@@ -109,3 +109,11 @@ For complex greenfield projects:
 
 A successful manifest validation does not prove visual quality.
 Never claim completed Figma QA without inspecting actual screenshots.
+
+## Reference Discovery (v2.7)
+- For significant redesign or new visual direction, read `references/reference-discovery.md` after content and screen contracts, before UI composition.
+- Search existing project assets first; next consult task-appropriate visual, UX, component, or AI-specific sources from `references/reference-source-registry.md`.
+- Document selected references with `templates/reference-evaluation.md`, including exact URL, inspected evidence, transferred principle, rejected attributes, provenance and contract IDs.
+- Create `templates/section-contract.md` for significant page sections: required slots, composition, density, responsive behavior, approved components and selected reference IDs.
+- Only adopt relevant references; do not substitute generic galleries for task and brand evidence. Keep exploratory personal prototypes lightweight, while respecting applicable reuse restrictions.
+- A page screen assembled without inspected composition references or an explicit existing-system rationale must not be called visually validated.
