@@ -1,4 +1,4 @@
-# figma-product-design v2.5
+# figma-product-design v2.7
 A skill workflow for designing from scratch, design systems, scoped Figma edits, brand kits and QA. Documentation is in `SKILL.md`; source evidence/limitations in `references/source-review.md`.
 
 Install into `~/.claude/skills/figma-product-design` for Claude Code and `~/.agents/skills/figma-product-design` for Codex. **Backup v1 before replacement**. Requires a Figma MCP connection for actual canvas writing. Loading the skill does not install or authenticate Figma MCP.
@@ -18,3 +18,6 @@ Adds `references/artifact-first-workflow.md`, `references/atomic-composition.md`
 
 ## v2.5 specification-driven design
 New source-backed research and operational contracts in `references/new-research-2026-10.md`, `references/specification-driven-generation.md`, `templates/screen-contract.md`, and `templates/component-fixtures.md`. Stable dependency links constrain generation and guide regression checks. This does not establish automatic reproducibility without empirical agent tests.
+
+## v2.7 reference intelligence
+Contextual reference discovery, source registry, reference evaluation cards and Section Contracts. Run after content/screen contracts and before high-fidelity UI. Reference research is a gate for significant work, not a requirement for minor edits. Personal non-commercial prototyping is the default experimental mode; source and obvious reuse restrictions are retained. A working Figma visual regression has not yet been performed for this release.
