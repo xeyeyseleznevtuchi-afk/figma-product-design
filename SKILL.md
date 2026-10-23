@@ -91,3 +91,21 @@ A complete deliverable must be visually credible, structurally native/editable, 
 - Generate screens from explicit reusable instances and constrained properties; avoid improvising new component structures, styles or business rules at assembly time.
 - Track flow → screen → pattern → component → token links as a directed dependency graph, not a rigid chain. When contracts change, identify impacted consumers and revalidate them.
 - For small changes, reuse existing approved contracts; do not force a new discovery ritual.
+
+## Artifact compiler integration (v2.6)
+
+For complex greenfield projects:
+
+1. Read `references/artifact-compiler.md` before building screens.
+2. Create inspectable product, flow, screen, content, component and token contracts.
+3. Maintain stable artifact IDs, revisions, provenance, approval status and dependencies.
+4. Use `templates/contract-manifest.json` as the starting manifest.
+5. Validate the manifest with `scripts/validate_contracts.py`.
+6. Build isolated component specimens before composing final screens.
+7. Assemble screens from reusable component instances and verified semantic tokens.
+8. Verify master-instance links, variable bindings, states and responsive layouts.
+9. When contracts change, identify affected components and screens.
+10. Compare two independent builds before claiming reproducible generation.
+
+A successful manifest validation does not prove visual quality.
+Never claim completed Figma QA without inspecting actual screenshots.
