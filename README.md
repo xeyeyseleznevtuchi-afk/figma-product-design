@@ -1,4 +1,4 @@
-# figma-product-design v2.3
+# figma-product-design v2.4
 A skill workflow for designing from scratch, design systems, scoped Figma edits, brand kits and QA. Documentation is in `SKILL.md`; source evidence/limitations in `references/source-review.md`.
 
 Install into `~/.claude/skills/figma-product-design` for Claude Code and `~/.agents/skills/figma-product-design` for Codex. **Backup v1 before replacement**. Requires a Figma MCP connection for actual canvas writing. Loading the skill does not install or authenticate Figma MCP.
@@ -12,3 +12,6 @@ Adds six focused reference files for component contracts, responsive content, ac
 - `references/recovery-protocol.md`: classifies errors, forbids policy-block workarounds, requires state inspection before retry, and describes idempotent recovery.
 - `references/token-and-variant-regression.md`: audit true token bindings, component sets/instances, responsive screenshots and honest PASS/FAIL/NOT TESTED evidence.
 - October 2026 sandbox baseline: **6 variables created, 0 verified bound nodes, desktop screen only**. v2.3 documents regression tests; it has not passed them yet.
+
+## v2.4 artifact-first and atomic design
+Adds `references/artifact-first-workflow.md`, `references/atomic-composition.md`, `references/atomic-architecture-sources.md` and `templates/artifact-manifest.md`. These introduce durable prerequisite design artifacts, traceable component composition, and a non-linear Atomic Design interpretation. This is a documented requirement, not yet proof of a successful agent-driven end-to-end Figma run.
