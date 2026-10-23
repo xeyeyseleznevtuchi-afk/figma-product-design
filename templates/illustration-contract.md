@@ -1,0 +1,14 @@
+# Illustration and media contract
+- ILL-ID / revision / status:
+- Linked SECTION-ID and COMPONENT-ID:
+- Role: explain / demonstrate / decorate / evidence / navigation:
+- Required medium: raster illustration / editable vector / product screenshot / diagram / animation / none:
+- Subject and message:
+- Brand visual vocabulary (colors, geometry, stroke, texture, perspective, detail):
+- Composition, aspect ratio, focal position and responsive crops:
+- Source/ref and inspected evidence:
+- Constraints and forbidden motifs:
+- Variants (size, theme, state):
+- Output asset and editable source IDs:
+- Accessibility: alt text or decorative classification:
+- Acceptance test and screenshot reference:
