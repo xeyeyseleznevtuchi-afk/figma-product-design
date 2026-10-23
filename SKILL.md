@@ -1,9 +1,9 @@
 ---
 name: figma-product-design
 description: Design, build, evolve, and validate native Figma product UI, brand kits and scalable design systems, from zero or existing files. Select the smallest fitting workflow: discovery, UX architecture, visual direction, tokens/components, screens, changes, brand assets, or QA.
-version: 2.4.0
+version: 2.5.0
 ---
-# Figma Product Design v2.4 — workflow orchestrator
+# Figma Product Design v2.5 — workflow orchestrator
 
 ## Goal and precedence
 Deliver high-quality, genuinely editable Figma artifacts, not persuasive prose, placeholder screenshots, or surface-level AI decoration. Respect user instructions, established design, and directly observed file/code evidence above generic advice. This skill **does not replace** `human-first-design`, `human-first-web-audit`, or official Figma capabilities. Invoke official `figma-use` before any Figma API write; `figma-generate-design` for composed screens, `figma-generate-library` for tokens/components, and `figma-create-new-file` when creating a file. If these skills/tools are unavailable, explicitly report limitations; never claim canvas modifications.
@@ -82,3 +82,12 @@ A complete deliverable must be visually credible, structurally native/editable, 
 - Component specimen fixtures and state coverage must precede duplication in final screens. Keep product-relevant local patterns local; do not publish every component by default.
 - **Release blocker:** complex greenfield screen without an artifact manifest (or verified equivalents), screen constructed mainly from raw disconnected nodes, or unverified master-instance relationships cannot be declared a completed system.
 - For a one-control edit or small scoped change, **reuse** existing evidence and avoid ceremonial over-documentation.
+
+## Specification-driven composition and reproducibility (v2.5)
+- Before creating nontrivial high-fidelity screens, read `references/specification-driven-generation.md`; produce or resolve explicit product/flow/screen/component/token contracts with stable IDs and dependencies.
+- Use `templates/screen-contract.md` to define the screen's content schema, transitions, action permissions, state coverage, responsive composition and accepted components.
+- Use `templates/component-fixtures.md` to describe each demanded component's variants, typed properties, content bounds, semantic tokens, specimen examples, and consuming screens. Build isolated fixture instances **before** duplicating components in final screens.
+- Ground technical choices in `references/new-research-2026-10.md` and distinguish original source statements from our engineering requirements.
+- Generate screens from explicit reusable instances and constrained properties; avoid improvising new component structures, styles or business rules at assembly time.
+- Track flow → screen → pattern → component → token links as a directed dependency graph, not a rigid chain. When contracts change, identify impacted consumers and revalidate them.
+- For small changes, reuse existing approved contracts; do not force a new discovery ritual.
