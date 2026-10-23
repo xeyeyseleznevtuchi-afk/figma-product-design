@@ -1,9 +1,9 @@
 ---
 name: figma-product-design
 description: Design, build, evolve, and validate native Figma product UI, brand kits and scalable design systems, from zero or existing files. Select the smallest fitting workflow: discovery, UX architecture, visual direction, tokens/components, screens, changes, brand assets, or QA.
-version: 2.3.0
+version: 2.4.0
 ---
-# Figma Product Design v2.3 — workflow orchestrator
+# Figma Product Design v2.4 — workflow orchestrator
 
 ## Goal and precedence
 Deliver high-quality, genuinely editable Figma artifacts, not persuasive prose, placeholder screenshots, or surface-level AI decoration. Respect user instructions, established design, and directly observed file/code evidence above generic advice. This skill **does not replace** `human-first-design`, `human-first-web-audit`, or official Figma capabilities. Invoke official `figma-use` before any Figma API write; `figma-generate-design` for composed screens, `figma-generate-library` for tokens/components, and `figma-create-new-file` when creating a file. If these skills/tools are unavailable, explicitly report limitations; never claim canvas modifications.
@@ -74,3 +74,11 @@ A complete deliverable must be visually credible, structurally native/editable, 
 - Separate real COMPONENT_SET variants from named standalone components. Verify instance ancestry, overrides and coverage against the requested state matrix.
 - Distinguish desktop-only checks from a verified mobile implementation. Never say responsive QA passed without reviewing the target-width screenshot and bounds.
 - Every test or release report must state PASS, FAIL or NOT TESTED with exact evidence; structural package validation alone does not establish design quality.
+
+## Artifact-first and Atomic Design contract (v2.4)
+- For **complex new-product and design-system-from-zero** work, read `references/artifact-first-workflow.md` and maintain `templates/artifact-manifest.md`. Create or locate inspectable brief, task/IA, user flows/wireflows/state matrix, content template, visual direction and component dependency inventory **before substantial high-fidelity screen construction**. List concrete artifact paths/IDs; ideas only stated in chat do not count.
+- Follow `references/atomic-composition.md` to compose atoms → molecules → organisms → templates → populated pages through real Figma master components, component sets and instances, not disconnected shapes/text. Preserve links and audit actual bindings.
+- Read `references/atomic-architecture-sources.md`; distinguish Brad Frost's **non-linear** conceptual Atomic Design from the team's artifact gate and recommended Figma file structure. Do not enforce an artificial waterfall; refine components from real page feedback.
+- Component specimen fixtures and state coverage must precede duplication in final screens. Keep product-relevant local patterns local; do not publish every component by default.
+- **Release blocker:** complex greenfield screen without an artifact manifest (or verified equivalents), screen constructed mainly from raw disconnected nodes, or unverified master-instance relationships cannot be declared a completed system.
+- For a one-control edit or small scoped change, **reuse** existing evidence and avoid ceremonial over-documentation.
