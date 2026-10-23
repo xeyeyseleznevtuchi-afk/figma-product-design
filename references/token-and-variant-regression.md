@@ -1,7 +1,7 @@
 # Design-system integration regression: tokens, variants, responsive screens
 
-## Test fixture: new B2B SaaS workspace
-Build a minimal desktop (1440px) and mobile (390px) workflow in an isolated Figma file. Show realistic distinct metric values and record content rationale; avoid duplicating placeholder metrics across cards.
+## Test fixture: neutral record-management workspace
+Build a minimal desktop (1440px) and mobile (390px) workflow in an isolated Figma file. Use varied representative content values from a defined test fixture; avoid duplicating placeholder metrics across cards. No industry-specific entities are required.
 
 ## Foundation assertions
 - Local COLOR collection contains semantic background, surface, primary/secondary text, border, action tokens, and (only if necessary) base primitives.
